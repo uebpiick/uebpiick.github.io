@@ -1,3 +1,4 @@
-import {atobURL} from "/lib.js";
+import { atobURL } from "/lib.js";
 
-atobURL(new URL(location.href).searchParams.get("url"));
+const url = new URL(location.href).searchParams.get("url");
+if (url) location.href = atobURL(url);
