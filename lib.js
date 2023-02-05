@@ -1,4 +1,4 @@
-exports.atobURL = (string) => {
+exports.btoaURL = (string) => {
 	return btoa(unescape(encodeURIComponent(string)))
 		.replace(/\+/g, "-")
 		.replace(/\//g, "_")
